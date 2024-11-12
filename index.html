@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Calculadora de Portfolio</h1>
+
+      <div class="inputs">
+        <div class="input-group">
+          <label for="appleStart">Precio inicial Apple ($):</label>
+          <input type="number" id="appleStart" value="145" />
+        </div>
+        <div class="input-group">
+          <label for="appleEnd">Precio final Apple ($):</label>
+          <input type="number" id="appleEnd" value="160" />
+        </div>
+        <div class="input-group">
+          <label for="googleStart">Precio inicial Google ($):</label>
+          <input type="number" id="googleStart" value="2800" />
+        </div>
+        <div class="input-group">
+          <label for="googleEnd">Precio final Google ($):</label>
+          <input type="number" id="googleEnd" value="2950" />
+        </div>
+      </div>
+
+      <div class="results">
+        <div class="result-item">
+          <p><strong>Ganancia ($):</strong> <span id="profit">1500</span></p>
+        </div>
+        <div class="result-item">
+          <p>
+            <strong>Retorno anualizado (%):</strong>
+            <span id="annualizedReturn">15%</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>
